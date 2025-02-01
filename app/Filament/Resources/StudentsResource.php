@@ -80,6 +80,7 @@ class StudentsResource extends Resource
                         FileUpload::make('profile')
                             ->required()
                             ->directory('students')
+                            ->avatar()
                     ])
             ]);
     }
@@ -125,6 +126,9 @@ class StudentsResource extends Resource
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
+            // ->headerActions([
+            //     Tables\Actions\CreateAction::make() // bisa menggunakan ini untuk menambahkan button create data
+            // ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
