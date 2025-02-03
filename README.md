@@ -17,4 +17,21 @@
 2. membuat kolom yang dimana bisa menupload foto profil
 3. mengganti APP_URL di file .env dengan URL yang sudah dihosting seperti http://127.0.0.1:8000
 4. directory() = untuk mengatur direktori upload, defaultnya berada di folder public
-5. mengatur columnspan agar bisa responsive
+5. mengatur columnspan agar bisa responsive mengunakan columnspan
+
+## Episode Translation
+
+1. Tutorial membuat nomor urut, atau nomor index di Column. bisa dicari di Documentation "Filament Displaying the row index"
+2. Tutorial membuat Translation terhadap Website, dengan membuka documentation Filament "Publishing Translation", dan masukkan command ke CMD "php artisan vendor:publish --tag=filament-panels-translations". Setelah itu file translationnya berada di "vendor/filamentfilament/resource/lang", di dalam file tersebut banyak bahasa yang bisa dipilih.
+
+## Episode Relation Manager
+
+1. Tutorial membuat tabel relasi didalam form , dengan menggunakan "Relation Manager", bisa digunakan untuk membuat tabel dari tabel detail / tabel transaksi.
+2. Untuk pembuatan Relasi Manager bisa menggunakan command, "php artisan make:filament-relation-manager 'Resource yang dipilih' 'nama method relasi' name", dengan command tersebut akan membuatkan file relasi manager didalam Resource yang dipilih
+3.  File Relasi tersebut bisa dimasukkan Form Builder dan Table Builder.
+
+## Episode Create Option
+
+1. Tutorial membuat shortcut untuk membuat data baru didalam Relation Manager dengan tombol create option form. bisa dicari di filament documentation, search "Creating a new option in a modal".
+2. jangan lupa menambhkan method relationship() untuk  menyambungkan modal tersebut dengan database. paramternya adalah "->relationship(name: "nama method dalam model", titleAttribute: "nama fieldnya yang dipilih")"
+3. Bisa menambahkan ->createoptionAction() untuk me-custom option form yang kita buat.
