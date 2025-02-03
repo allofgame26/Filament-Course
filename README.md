@@ -35,3 +35,9 @@
 1. Tutorial membuat shortcut untuk membuat data baru didalam Relation Manager dengan tombol create option form. bisa dicari di filament documentation, search "Creating a new option in a modal".
 2. jangan lupa menambhkan method relationship() untuk  menyambungkan modal tersebut dengan database. paramternya adalah "->relationship(name: "nama method dalam model", titleAttribute: "nama fieldnya yang dipilih")"
 3. Bisa menambahkan ->createoptionAction() untuk me-custom option form yang kita buat.
+
+## Epiode Import Excel
+
+1. Tutorial mengimport datta dari excel ke database. pertama me install package, yaitu dengan command "composer require maatwebsite/excel"
+2. jangan lupa untuk memsettings di file app.php, menambhkan 'Excel' => Maatwebsite/Excel/Facades/Excel::class
+3. membuat folder untuk import data, dengan mengetikkan command, "php artisan make:import  "Nama Folder" --model="Nama Model yang dipakai"
