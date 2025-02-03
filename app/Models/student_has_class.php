@@ -12,7 +12,7 @@ class student_has_class extends Model
     protected $table = 'student_has_classes';
 
     protected $fillable = [
-        'student_id',
+        'students_id',
         'homerooms_id',
         'periodes_id',
         'is_open',
@@ -21,7 +21,7 @@ class student_has_class extends Model
     protected $guarded = [];
 
     public function student(){
-        return $this->belongsTo(student::class, 'student_id', 'id');
+        return $this->belongsTo(Student::class, 'students_id', 'id');
     }
 
     public function homerooms(){

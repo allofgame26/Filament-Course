@@ -33,9 +33,10 @@ class ListStudents extends ListRecords
         $data = Actions\CreateAction::make()
         ->icon('heroicon-o-plus-circle');
         return view('filament.custom.upload-file', compact('data')); // compact() adalah cara untuk mengirimkan data ke view
+        // return view('filament.custom.upload-file'); // compact() adalah cara untuk mengirimkan data ke view
     }
 
-    public $file = '';
+    public $file = ''; // membuat variabel awal untuk menyimpan file yang diupload
 
     public function save(){ // jangan lupa untuk me install composer require maatwebsite/excel
         if($this->file != ''){

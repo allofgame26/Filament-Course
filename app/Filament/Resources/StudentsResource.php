@@ -127,7 +127,8 @@ class StudentsResource extends Resource
                 Tables\Actions\DeleteAction::make(),
             ])
             // ->headerActions([
-            //     Tables\Actions\CreateAction::make() // bisa menggunakan ini untuk menambahkan button create data
+            //     Tables\Actions\CreateAction::make()  // bisa menggunakan ini untuk menambahkan button create data
+            //     ->icon('heroicon-o-plus-circle')
             // ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -154,7 +155,7 @@ class StudentsResource extends Resource
     public static function getRelations(): array
     {
         return [
-            HasroomRelationManager::class,
+            // HasroomRelationManager::class,
         ];
     }
 

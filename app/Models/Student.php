@@ -23,7 +23,7 @@ class Student extends Model
 
     protected $table = 'students';
 
-    public function hasroom(){
-        return $this->hasMany(student_has_class::class,'students_id','id');
+    public function hasclass(){
+        return $this->hasMany(student_has_class::class,'student_id','id');
     }
 }

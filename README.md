@@ -41,3 +41,7 @@
 1. Tutorial mengimport datta dari excel ke database. pertama me install package, yaitu dengan command "composer require maatwebsite/excel"
 2. jangan lupa untuk memsettings di file app.php, menambhkan 'Excel' => Maatwebsite/Excel/Facades/Excel::class
 3. membuat folder untuk import data, dengan mengetikkan command, "php artisan make:import  "Nama Folder" --model="Nama Model yang dipakai"
+
+## Episode Custom Page
+
+1. Membuat custom Page dengan mengetik command "php artisan make:filament-page "Nama Page" --model="Nama Model yang dipakai" --type=custom

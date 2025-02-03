@@ -1,11 +1,11 @@
 <div>
     <x-filament::breadcrumbs :breadcrumbs="[
-        '/admin/students' => 'Students',
+        '/admin/teachers' => 'Teachers',
         '' => 'List',
     ]" />
     <div class="flex justify-between mt-1">
         <div class="font-bold text-3xl">
-            Students
+            Teacher
         </div>
         <div>
             {{ $data }} <!-- Bisa menggunakan ini untuk menampilkan data yang telah diupload -->
